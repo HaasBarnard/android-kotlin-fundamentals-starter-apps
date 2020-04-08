@@ -62,7 +62,7 @@ class GameFragment : Fragment() {
         // Set the viewmodel for databinding - this allows the bound layout access
         // to all the data in the ViewModel
         binding.gameViewModel = viewModel
-        
+
 
         viewModel.eventGameFinish.observe(viewLifecycleOwner, Observer { hasFinished ->
             if (hasFinished) gameFinished()
